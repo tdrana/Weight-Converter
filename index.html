@@ -24,21 +24,33 @@
                <div class="col-lg-6 mx-auto">
                    <h1 class="title text-white text-center mb-5">Weight Converter</h1>
                     <form action="">
-                        <div class="form-group">
-                            <input type="number"  id="getPound"  class="form-control" placeholder="Enter Pounds...">
+                        <div class="form-group form-row">
+                            <input type="number"  id="getValue"  class="form-control col-8 mx-2" placeholder="Enter Pounds...">
+
+                              <select class="form-control col-3" name="" id="selectWeight" onchange=" getSelectValue ()">
+                                <option value="0">Select First</option>
+                                <option value="pound">Pounds</option>
+                                <option value="kilogram">Kilograms</option>
+                                <option value="ounces">Ounces</option>
+                              </select>
+                            
                         </div>
                     </form>
                     <div id="output">
 
-                        <div class="card-body bg-primary text-white mb-2">
+                        <div class="card-body bg-primary text-white mb-2" id="grams">
                             <h4 class="card-title"> Grams:</h4>
                             <div id="gramsOutput"></div>
                         </div>
-                        <div class="card-body mb-2 bg-success text-white">
+                        <div class="card-body bg-secondary text-white mb-2" id="pounds">
+                            <h4 class="card-title"> Pounds:</h4>
+                            <div id="poundOutput"></div>
+                        </div>
+                        <div class="card-body mb-2 bg-success text-white" id="kgs">
                             <h4>kilograms:</h4>
                             <div id="kgOutput"></div>
                         </div>
-                        <div class="card-body mb-2 bg-danger text-white">
+                        <div class="card-body mb-2 bg-danger text-white" id="ounces">
                             <h4>Ounces:</h4>
                             <div id="ouncesOutput"></div>
                         </div>
